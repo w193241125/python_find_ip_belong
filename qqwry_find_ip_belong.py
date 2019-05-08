@@ -15,7 +15,7 @@ ip_data = df.IP.tolist()
 city_data = []
 isp_data = []
 q = QQwry()
-q.load_file('qqwry.dat')
+q.load_file('G:/python/0-ip/qqwry_find_ip_belong/qqwry.dat')
 for i in ip_data:
 
     result = q.lookup(i)
@@ -26,4 +26,4 @@ for i in ip_data:
 ipinfo = {"IP": ip_data, "城市": city_data}
 result = pd.DataFrame(ipinfo)
 # # Dataframe输出为excel
-result.to_excel('4.xlsx')
+result.to_excel('5.xlsx')
